@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 class About extends Component {
+    static path = '/about'
     state = {  }
     render() {
         return (

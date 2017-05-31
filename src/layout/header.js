@@ -30,7 +30,7 @@ class Header extends Component {
                         <Navigation>
                             <Link to="/">Home</Link>
                             <Link to="/smart-notes">Smart notes</Link>
-                            <Link to="/topics">Topics</Link>
+                            <Link to="/about">About</Link>
                         </Navigation>
                     
                     <div className="ReactLogo2">
