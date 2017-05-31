@@ -1,21 +1,36 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 
+import { Layout } from 'react-mdl';
+
+import SmartFooter from './layout/footer';
+import Header from './layout/header';
+import Content from './layout/content';
+import Drawer from './layout/drawer';
+
+
+
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
+    state = {
+        title: 'Smart notes'
+    }
+
+    render() {
+        return (
+          <div className="App">
+            
+           <Layout style={{ background: 'url(http://www.getmdl.io/assets/demos/transparent.jpg) center / cover' }}>
+                <Header />
+                <Drawer title="Title" />
+                <Content >
+                  { this.props.children }
+                </Content>
+              <SmartFooter />
+            </Layout>
+          </div >
+        );
+    }
 }
 
 export default App;

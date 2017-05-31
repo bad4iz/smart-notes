@@ -1,0 +1,16 @@
+.mdl-layout__header{
+    background-color: #222;
+}
+.mdl-layout__header-row{
+    justify-content: space-between;
+}
+
+.ReactLogo2{
+    display: none;
+    opacity: 0;
+    transition: 2s;
+}
+
+.App-logo{
+    width: 50px;
+}
