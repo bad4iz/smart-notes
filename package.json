@@ -1,6 +1,6 @@
 {
   "name": "smart-notes",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "dependencies": {
     "react": "^15.5.4",
@@ -17,5 +17,22 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "description": "SPA smart notes on React.js",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bad4iz/smart-notes.git"
+  },
+  "keywords": [
+    "spa",
+    "react",
+    "smart-notes"
+  ],
+  "author": "bad4iz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bad4iz/smart-notes/issues"
+  },
+  "homepage": "https://github.com/bad4iz/smart-notes#readme"
 }
