@@ -4,6 +4,7 @@ import Note from './Note';
 
 class NotesGrid extends Component {
     state = {  }
+    
     render() {
         return (
          <Note/>   
