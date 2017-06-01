@@ -6,7 +6,7 @@ import NotesGrid from './notesGrid/NotesGrid';
 class SmartNotes extends Component {
     static path = '/smart-notes';
     state = {
-        notes: [ ]
+        notes: []
     };
 
     handleNoteAdd(newNote) {

@@ -6,10 +6,11 @@ class NotesGrid extends Component {
     state = {}
 
     render() {
+        console.log(this.props.notes);
         return (
             <div style={{margin: '10px auto'}}>
                 {
-                    this.props.notes.map(note => {
+                    this.props.notes.map((note) => {
                         return (
                             <Note
                                 key={note.id}
