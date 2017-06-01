@@ -9,7 +9,7 @@ class Note extends Component {
              <Card shadow={0} style={{ width: '320px', height: '320px', margin: '10px auto' }}>
                     <CardTitle expand style={{ color: '#fff', background: 'url(http://www.getmdl.io/assets/demos/dog.png) bottom right 15% no-repeat #46B6AC' }}>Update</CardTitle>
                     <CardText>
-                        Далеко-далеко за словесными горами тексты, маленький, собрал предложения, деревни рекламных ты, инициал живет свой пояс.
+                        Далеко-далеко за деревни рекламных ты, инициал живет свой пояс.
                     </CardText>
                     <CardActions border>
                         <Button colored>View Updates</Button>
