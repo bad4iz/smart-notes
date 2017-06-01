@@ -3,7 +3,28 @@ import {CardTitle, CardActions, Button, Card, CardText, Textfield} from 'react-m
 
 class NoteEditor extends Component {
     
-    state = {}
+    state = {};
+
+    handleTextChange = (event) => {
+        this.setState({
+            text: event.target.value
+        });
+    };
+
+    handleNoteAdd = () => {
+        if (this.state.text.length) {
+            const newNote = {
+                text: this.state.text,
+                color: this.state.backgroundColor,
+                id: Date.now(),
+                seconds: 0,
+                isDone: false
+            };
+
+            this.setState({ text: '' });
+            this.props.onNoteAdd(newNote);
+        }
+    };
     
     render() {
         return (
@@ -16,7 +37,8 @@ class NoteEditor extends Component {
                 <CardTitle expand>Добавте заметку</CardTitle>
                 <CardText>
                     <Textfield
-                        onChange={() => {}}
+                        value={this.state.text}
+                        onChange={this.handleTextChange}
                         label="Text lines..."
                         rows={3}
                         style={{
@@ -24,7 +46,7 @@ class NoteEditor extends Component {
                         }}/>
                 </CardText>
                 <CardActions border>
-                    <Button colored>добавить</Button>
+                    <Button  onClick={this.handleNoteAdd} colored>добавить</Button>
                 </CardActions>
             </Card>
         );
