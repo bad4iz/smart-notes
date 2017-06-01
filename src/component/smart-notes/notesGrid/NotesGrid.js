@@ -1,13 +1,25 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 
 import Note from './Note';
 
 class NotesGrid extends Component {
-    state = {  }
-    
+    state = {}
+
     render() {
         return (
-         <Note/>   
+            <div style={{margin: '10px auto'}}>
+                {
+                    this.props.notes.map(note => {
+                        return (
+                            <Note
+                                key={note.id}
+                                title={note.title}
+                            > {note.text} </Note>
+                        );
+                    })
+                }
+                <Note/>
+            </div>
         );
     }
 }
