@@ -6,7 +6,6 @@ import routes from './Router';
 class Content extends Component {
     state = {}
     render() {
-        console.log(this.props);
         return (
                 <MDLContent>
                      { routes }
