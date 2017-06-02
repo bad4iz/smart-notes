@@ -9,15 +9,14 @@ class NotesGrid extends Component {
         return (
             <div style={{margin: '10px auto'}}>
                 {
-                    this.props.notes.map( (note) => {
-                        if (note.lenght) {
-                            return (
-                                <Note
-                                    key={note.id}
-                                    title={note.title}
-                                > {note.text} </Note>
-                            );
-                        }
+                    this.props.notes.map((note) => {
+                        return (
+                            <Note
+                                key={note.id}
+                                id={note.id}
+                                title={note.title}
+                            > {note.text} </Note>
+                        );
                     })
                 }
             

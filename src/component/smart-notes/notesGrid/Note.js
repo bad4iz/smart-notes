@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {CardTitle, CardActions, Button, Card, CardText } from 'react-mdl';
 
+import { Link } from 'react-router-dom';
 
 class Note extends Component {
     state = { 
@@ -10,7 +11,7 @@ class Note extends Component {
     render() {
         return (
              <Card shadow={1} style={{display: 'inline-block', margin: '5px', width: '200px'}} >
-                    <CardTitle>{this.state.title}</CardTitle>
+                    <CardTitle> <Link to={`/smart-notes/${this.props.id}`}>{this.state.title}</Link></CardTitle>
                     <CardText>
                        {this.props.children}
                     </CardText>
