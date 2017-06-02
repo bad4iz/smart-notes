@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import {Drawer as MDLDrawer, Navigation} from 'react-mdl';
 
 class Drawer extends Component {
-    state = {  }
+    
+    state = {  };
+    
     render() {
         // const {title} = { this.props };
         return (

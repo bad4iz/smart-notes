@@ -4,9 +4,7 @@ import './header.css';
 
 import { Header as MDLHeader, HeaderRow, Textfield, Navigation } from 'react-mdl';
 
-import {
-    Link
-} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 class Header extends Component {
     state = {}

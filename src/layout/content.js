@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { Content as MDLContent } from 'react-mdl';
 
-import routes from './Router';
+import routes from './router';
 
 class Content extends Component {
-    state = {}
+    state = {};
+    
     render() {
         return (
                 <MDLContent>
