@@ -3,13 +3,13 @@ import React, {Component} from 'react';
 import Note from './Note';
 
 class NotesGrid extends Component {
-    state = {}
+    state = {};
     
     render() {
         return (
             <div style={{margin: '10px auto'}}>
                 {
-                    this.props.notes.map((note) => {
+                    this.props.notes.map( (note) => {
                         if (note.lenght) {
                             return (
                                 <Note
