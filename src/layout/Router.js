@@ -1,14 +1,14 @@
 import React from 'react';
-import {Route} from 'react-router-dom';
+import {Route, Switch} from 'react-router-dom';
 
 import HomePage from '../component/home/HomePage';
-import SmartNotes from '../component/smart-notes/smart-notes';
+import SmartNotesRout from '../component/smart-notes/smartNotesRout';
 import About from '../component/about/about';
 
 export default(
-    <div>
+    <Switch>
         <Route exact  component={HomePage} path={HomePage.path}/>
-        <Route component={SmartNotes} path={SmartNotes.path}/>
+        <Route component={SmartNotesRout} path={SmartNotesRout.path}/>
         <Route component={About} path={About.path}/>
-    </div>
+    </Switch>
 );
