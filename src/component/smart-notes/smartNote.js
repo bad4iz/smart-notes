@@ -9,8 +9,7 @@ class SmartNotes extends Component {
     render() {
         return (
             <div>
-                <h1>{this.props.match.params.number}</h1>
-                ffffffffffffffffff
+                <h1>Note {this.props.match.params.number}</h1>
             </div>
         );
     }

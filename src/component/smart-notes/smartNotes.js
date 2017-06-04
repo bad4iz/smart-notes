@@ -20,7 +20,6 @@ class SmartNotes extends Component {
     render() {
         return (
             <div>
-           
                <NoteEdinor
                    onNoteAdd={this.handleNoteAdd.bind(this)}
                />
