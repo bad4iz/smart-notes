@@ -13,3 +13,5 @@ const SmartNotesRout  = () => (
     
 export default SmartNotesRout;
 
+
+
