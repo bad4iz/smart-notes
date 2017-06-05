@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import logo from './logo.svg';
-import './App.css';
+// import './App.css';
 
 import { Layout } from 'react-mdl';
 
@@ -9,12 +9,10 @@ import Header from './layout/header';
 import Content from './layout/content';
 import Drawer from './layout/drawer';
 
-
-
 class App extends Component {
     state = {
         title: 'Smart notes'
-    }
+    };
 
     render() {
         return (
