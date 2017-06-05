@@ -7,7 +7,7 @@ import { Header as MDLHeader, HeaderRow, Textfield, Navigation } from 'react-mdl
 import { Link } from 'react-router-dom';
 
 class Header extends Component {
-    state = {}
+    state = {};
     render() {
         return (
             <MDLHeader waterfall style={{ backgroundColor: '#222' }} >
