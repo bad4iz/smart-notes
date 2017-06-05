@@ -2,7 +2,7 @@ import React from 'react';
 import {Route, Switch} from 'react-router-dom';
 
 import SmartNotes from './smartNotes';
-import SmartNote from './smartNote';
+import SmartNote from './SmartNote';
 
 const SmartNotesRout  = () => (
             <Switch>
@@ -12,6 +12,3 @@ const SmartNotesRout  = () => (
         );
     
 export default SmartNotesRout;
-
-
-
