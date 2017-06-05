@@ -11,7 +11,6 @@ class SmartNotes extends Component {
     };
 
     handleNoteAdd(newNote) {
-        console.log(newNote);
         const newNotes = this.state.notes.slice();
         newNotes.unshift(newNote);
         this.setState({ notes: newNotes });
