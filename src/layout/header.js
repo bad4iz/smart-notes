@@ -24,7 +24,6 @@ class Header extends Component {
                     />
                 </HeaderRow>
                 <HeaderRow >
-                    
                         <Navigation>
                             <Link to="/">Home</Link>
                             <Link to="/smart-notes">Smart notes</Link>
