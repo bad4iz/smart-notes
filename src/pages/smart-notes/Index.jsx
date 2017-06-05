@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 
 
-import NoteEdinor from './noteEditor/NoteEditor';
-import NotesGrid from './notesGrid/NotesGrid';
+import smartNotesRout from './smartNotesRout';
 
 class Index extends Component {
     static path = '/smart-notes';
@@ -19,10 +18,7 @@ class Index extends Component {
     render() {
         return (
             <div>
-                <NoteEdinor
-                    onNoteAdd={this.handleNoteAdd.bind(this)}
-                />
-                <NotesGrid notes={this.state.notes}/>
+                {smartNotesRout}
             </div>
         );
     }
