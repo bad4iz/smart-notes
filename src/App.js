@@ -9,8 +9,6 @@ import Header from './layout/header';
 import Content from './layout/content';
 import Drawer from './layout/drawer';
 
-
-
 class App extends Component {
     state = {
         title: 'Smart notes'
