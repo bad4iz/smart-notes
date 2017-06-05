@@ -6,7 +6,6 @@ import SmartNote from './smartNote';
 
 const SmartNotesRout  = () => (
             <Switch>
-                dsfsfadf
                 <Route exact path="/" component={SmartNotes}/>
                 <Route path= "/smart-notes/:number" component={SmartNote}/>
             </Switch>
