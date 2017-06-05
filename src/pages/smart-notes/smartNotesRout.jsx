@@ -6,7 +6,7 @@ import SmartNote from './smartNote';
 
 const SmartNotesRout  = () => (
             <Switch>
-                <Route exact path="/" component={SmartNotes}/>
+                <Route exact path="/smart-notes" component={SmartNotes}/>
                 <Route path= "/smart-notes/:number" component={SmartNote}/>
             </Switch>
         );
