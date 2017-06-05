@@ -1,9 +1,9 @@
 import React from 'react';
 import {Route, Switch} from 'react-router-dom';
 
-import HomePage from '../component/home/HomePage';
-import SmartNotesRout  from '../component/smart-notes/smartNotesRout';
-import About from '../component/about/about';
+import HomePage from '../pages/home/HomePage';
+import SmartNotesRout  from '../pages/smart-notes/smartNotesRout';
+import About from '../pages/about/about';
 
 export default(
     <Switch>
