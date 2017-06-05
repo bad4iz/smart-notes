@@ -18,7 +18,7 @@ class Index extends Component {
     render() {
         return (
             <div>
-                {smartNotesRout}
+                { smartNotesRout }
             </div>
         );
     }
