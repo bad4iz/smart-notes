@@ -12,3 +12,4 @@ export default(
         <Route component={About} path={About.path}/>
     </Switch>
 );
+

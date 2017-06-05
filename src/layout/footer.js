@@ -19,3 +19,4 @@ class SmartFooter extends Component {
 }
 
 export default SmartFooter;
+
