@@ -7,14 +7,11 @@ class HomePage extends Component {
     state = {  }
     render() {
         return (
-            <div>
-                <div className="alert alert-success">Hi HomePage</div>
-            </div>            
+            <div style={{background: 'url(https://goo.gl/mGkpd6) center / cover'}}>
+                sdfsdfsafd
+            </div>
         );
     }
 }
 
 export default HomePage;
-
-
-

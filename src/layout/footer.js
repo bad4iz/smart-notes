@@ -2,7 +2,7 @@ import React from 'react';
 import { Footer as MDLFooter, FooterSection, FooterLinkList} from 'react-mdl';
 
 
-const Footer = () => (
+const Footer = (title) => (
         <MDLFooter size="mini">
             <FooterSection type="left" logo="Bad4iz">
                 <FooterLinkList>
