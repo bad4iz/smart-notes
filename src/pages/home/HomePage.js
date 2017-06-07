@@ -4,11 +4,12 @@ class HomePage extends Component {
 
     static path = '/';
 
-    state = {  }
+    state = {  };
+    
     render() {
         return (
             <div style={{background: 'url(https://goo.gl/mGkpd6) center / cover'}}>
-                sdfsdfsafd
+                <h1>Главное не что делаешь а как!</h1>
             </div>
         );
     }
