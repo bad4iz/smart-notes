@@ -35,9 +35,7 @@ class App extends Component {
               <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
                   <AppBar title="My AppBar" />
               </MuiThemeProvider>
-              <MuiThemeProvider muiTheme={muiTheme}>
-                  <div>sdfasdfasfdasfasfas</div>
-              </MuiThemeProvider>
+             
             {/**/}
            {/*<Layout style={{ background: 'url(https://www.firestock.ru/wp-content/uploads/2014/09/photodune-1464507-700x466.jpg) center / cover' }}>*/}
                 {/*<Header title={this.state.title}/>*/}
