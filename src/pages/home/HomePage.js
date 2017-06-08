@@ -4,17 +4,15 @@ class HomePage extends Component {
 
     static path = '/';
 
-    state = {  }
+    state = {  };
+    
     render() {
         return (
-            <div>
-                <div className="alert alert-success">Hi HomePage</div>
-            </div>            
+            <div style={{background: 'url(https://goo.gl/mGkpd6) center / cover'}}>
+                <h1>Главное не что делаешь а как!</h1>
+            </div>
         );
     }
 }
 
 export default HomePage;
-
-
-
