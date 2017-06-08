@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import logo from '../logo.svg';
 import './header.css';
 
@@ -6,14 +6,12 @@ import { Header as MDLHeader, HeaderRow, Textfield, Navigation } from 'react-mdl
 
 import { Link } from 'react-router-dom';
 
-class Header extends Component {
-    state = {};
-    render() {
-        return (
+const Header = (title) => (
             <MDLHeader waterfall style={{ backgroundColor: '#222' }} >
+           
                 <HeaderRow title={<span>Smart notes</span>}>
                     <div className="ReactLogo">
-                        <img src={logo} className="App-logo" alt="logo" />
+                        <img src={logo} className="App-logo" alt='bad4iz' />
                     </div>
                     <Textfield
                         value=""
@@ -45,7 +43,5 @@ class Header extends Component {
 
 
         );
-    }
-}
 
 export default Header;
