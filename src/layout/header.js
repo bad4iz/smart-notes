@@ -22,6 +22,7 @@ const Header = (title) => (
                     />
                 </HeaderRow>
                 <HeaderRow >
+                    
                         <Navigation>
                             <Link to="/">Home</Link>
                             <Link to="/smart-notes">Smart notes</Link>
