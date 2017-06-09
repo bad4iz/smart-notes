@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import logo from './logo.svg';
-// import './App.css';
+import './App.css';
 
 import { Layout } from 'react-mdl';
 
@@ -13,7 +13,10 @@ class App extends Component {
     state = {
         title: 'Bad4iz'
     };
-
+    hendlerTitle = (title = 'Bad4iz') => {
+        setState({ title: title });
+    };
+    
     render() {
         return (
           <div className="App">
@@ -21,7 +24,9 @@ class App extends Component {
            <Layout style={{ background: 'url(https://www.firestock.ru/wp-content/uploads/2014/09/photodune-1464507-700x466.jpg) center / cover' }}>
                 <Header title={this.state.title}/>
                 <Drawer title={this.state.title} />
-                <Content >
+                <Content 
+                hendlerTitle={this.hendlerTitle}
+                >
                   { this.props.children }
                 </Content>
               <Footer title={this.state.title}/>
