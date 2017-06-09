@@ -14,6 +14,7 @@ import 'react-mdl/extra/material.js';
 
 ReactDOM.render(
     <Main/>
+    
 , document.getElementById('root'));
 
 registerServiceWorker();
