@@ -6,16 +6,14 @@ import registerServiceWorker from './registerServiceWorker';
 import { BrowserRouter as Router } from 'react-router-dom';
 
  
-import App from './App';
+import Main from './App';
 
 // React-MDL
 import 'react-mdl/extra/material.css';
 import 'react-mdl/extra/material.js';
 
 ReactDOM.render(
-    <Router>
-       <App/>
-    </Router>
+    <Main/>
 , document.getElementById('root'));
 
 registerServiceWorker();
