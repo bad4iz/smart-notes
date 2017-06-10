@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Button, Card, CardActions, CardText, CardTitle, Cell, Grid, Icon} from "react-mdl";
+import {Button, Card, CardActions, CardText, CardTitle, Cell, Chip, ChipContact, Grid, Icon} from "react-mdl";
 
 class About extends Component {
     static path = '/about';
@@ -48,15 +48,28 @@ class About extends Component {
                     { this.state.books.map(book => {
                         // console.log(book); `url(${book.image}) center / contain no-repeat`
                         return (
-                                <Card key={book.id} shadow={0} style={{width: '320px', height: '320px', margin: 'auto'}}>
-                                    <CardTitle expand style={{color: '#fff', background: `url(${book.image}) center / contain no-repeat`}}/>
-                                    <CardText >
+                            <Card shadow={0} style={{
+                                width: '200px',
+                                height: '300px',
+                                background: `url(${book.image}) top / contain no-repeat`,
+                                margin: 'auto'
+                            }}>
+                                <CardTitle expand/>
+                                <CardActions style={{padding: '16px', background: 'rgba(0,0,0,0.4)'}}>
+                                    <span style={{color: '#fff', fontSize: '14px', fontWeight: '500'}}>
                                         {book.title}
-                                    </CardText>
-                                    <CardActions border>
-                                        <a href={book.url}>Просмотреть на Озоне</a>
-                                    </CardActions>
-                                </Card>
+                                    </span>
+                                </CardActions>
+                                <CardActions style={{ padding: '0px', background: 'rgba(0,0,0,0.9)'}}>
+                                    <a href={book.url}>
+                                        <Chip>
+                                            Просмотреть на Ozon
+                                            <ChipContact
+                                                className="mdl-color--teal mdl-color-text--white"> O </ChipContact>
+                                            
+                                        </Chip></a>
+                                </CardActions>
+                            </Card>
                         );
                     })}
                 </Grid>
