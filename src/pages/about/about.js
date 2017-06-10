@@ -32,7 +32,7 @@ class About extends Component {
             {
                 id: 1,
                 title: 'ES6 и не только',
-                image: 'public/files/img/books/1015269939.jpg',
+                image: '/files/img/books/1015269939.jpg',
                 url: 'http://www.ozon.ru/context/detail/id/137473815/'
             }
         ]
@@ -43,7 +43,7 @@ class About extends Component {
             <div style={{width: '80%', margin: 'auto'}}>
                 <Grid>
                     <Cell col={12}>
-                        <h2>Осилиная литература</h2>
+                        <h2>Мной осилиная книга</h2>
                     </Cell>
                     { this.state.books.map(book => {
                         // console.log(book); `url(${book.image}) center / contain no-repeat`
