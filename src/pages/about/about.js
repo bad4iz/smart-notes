@@ -30,10 +30,16 @@ class About extends Component {
                 url: 'http://www.ozon.ru/context/detail/id/135731189/'
             },
             {
-                id: 1,
+                id: 5,
                 title: 'ES6 и не только',
                 image: '/files/img/books/1015269939.jpg',
                 url: 'http://www.ozon.ru/context/detail/id/137473815/'
+            },
+            {
+                id: 6,
+                title: 'драйв',
+                image: '',
+                url: ''
             }
         ]
     };
