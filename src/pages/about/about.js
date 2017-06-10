@@ -1,13 +1,47 @@
 import React, { Component } from 'react';
+import {Grid} from "react-mdl";
 
 class About extends Component {
-    static path = '/about'
-    state = {  }
+    static path = '/about';
+    state = {
+        books: [
+            {
+                id: 1,
+                title: 'Изучаем программирование на JavaScript',
+                image: 'public/files/img/books/1011395255.jpg',
+                url: 'http://www.ozon.ru/context/detail/id/31057355/'
+            },
+            {
+                id: 1,
+                title: '',
+                image: ''
+            },
+            {
+                id: 1,
+                title: '',
+                image: ''
+            },
+            {
+                id: 1,
+                title: '',
+                image: ''
+            },
+            {
+                id: 1,
+                title: '',
+                image: ''
+            },
+        ]
+    };
+    
     render() {
         return (
-            <div>
-                Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Подпоясал рыбного текста путь, страна пунктуация он! Собрал переписывается свое пустился речью назад наш своего. Заголовок, вершину домах! Единственное, букв.
-            </div>  
+            <div style={{width: '80%', margin: 'auto'}}>
+                <Grid shadow="1">
+                    <h2>Осилиная литература</h2>
+                    
+                </Grid>
+            </div>
         );
     }
 }
