@@ -12,7 +12,7 @@ class HomePage extends Component {
         return (
             <div style={{background: 'url(https://goo.gl/mGkpd6) center / cover'}}>
                 <h1>Главное не что делаешь а как!</h1>
-                <Grid className="demo-grid-ruler" shadow="1" >
+                <Grid className="demo-grid-ruler" shadow={1}>
                     <Card shadow={0} style={{width: '512px', margin: 'auto'}}>
                         <CardTitle style={{
                             color: '#fff',
