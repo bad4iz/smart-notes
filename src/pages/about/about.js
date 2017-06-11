@@ -54,7 +54,7 @@ class About extends Component {
                     { this.state.books.map(book => {
                         // console.log(book); `url(${book.image}) center / contain no-repeat`
                         return (
-                            <Card shadow={0} style={{
+                            <Card key={book.id} shadow={0} style={{
                                 width: '200px',
                                 height: '300px',
                                 background: `url(${book.image}) top / contain no-repeat`,
