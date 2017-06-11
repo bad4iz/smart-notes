@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 const Header = (title) => (
             <MDLHeader waterfall style={{ backgroundColor: '#222' }} >
            
-                <HeaderRow title={<span>Smart notes</span>}>
+                <HeaderRow title={ title.title }>
                     <div className="ReactLogo">
                         <img src={logo} className="App-logo" alt='bad4iz' />
                     </div>
