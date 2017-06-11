@@ -8,8 +8,8 @@ class Content extends Component {
     
     render() {
         return (
-                <MDLContent style={{width: '80%', margin: 'auto'}}>
-                     { routes  }
+                <MDLContent >
+                     { routes }
                 </MDLContent>
         );
     }
