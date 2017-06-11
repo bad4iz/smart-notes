@@ -38,15 +38,21 @@ class About extends Component {
             {
                 id: 6,
                 title: 'драйв',
-                image: '',
-                url: ''
+                image: '/files/img/books/drive.jpg',
+                url: 'https://www.ozon.ru/context/detail/id/22524686/'
+            },
+            {
+                id: 7,
+                title: 'Все мы врём. Как ложь, жульничество и самообман делают нас людьми',
+                image: '/files/img/books/liar.png',
+                url: 'http://www.ozon.ru/context/detail/id/137366623/'
             }
         ]
     };
     
     render() {
         return (
-            <div style={{width: '80%', margin: 'auto'}}>
+            <div >
                 <Grid>
                     <Cell col={12}>
                         <h2>Мной осилиная книга</h2>
@@ -54,12 +60,11 @@ class About extends Component {
                     { this.state.books.map(book => {
                         // console.log(book); `url(${book.image}) center / contain no-repeat`
                         return (
-                            <Card key={book.id} shadow={0} style={{
+                            <Card key={book.id} shadow={2} style={{
+                                margin: '10px',
                                 width: '200px',
                                 height: '300px',
-                                background: `url(${book.image}) top / contain no-repeat`,
-                                margin: 'auto'
-                            }}>
+                                background: `url(${book.image}) top / contain no-repeat`                            }}>
                                 <CardTitle expand/>
                                 <CardActions style={{padding: '16px', background: 'rgba(0,0,0,0.4)'}}>
                                     <span style={{color: '#fff', fontSize: '14px', fontWeight: '500'}}>
