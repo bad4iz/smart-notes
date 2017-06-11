@@ -13,8 +13,8 @@ class App extends Component {
     state = {
         title: 'Bad4iz'
     };
-    hendlerTitle = (title = 'Bad4iz') => {
-        setState({ title: title });
+    hendlerTitle = (titl = 'Bad4iz') => {
+        this.setState({ title: titl });
     };
     
     render() {
