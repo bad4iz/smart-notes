@@ -72,13 +72,10 @@ class About extends Component {
                                     </span>
                                 </CardActions>
                                 <CardActions style={{ padding: '0px', background: 'rgba(0,0,0,0.9)'}}>
-                                    <a href={book.url}>
-                                        <Chip>
-                                            Просмотреть на Ozon
-                                            <ChipContact
-                                                className="mdl-color--teal mdl-color-text--white"> O </ChipContact>
-                                            
-                                        </Chip></a>
+                                    <a href={book.url} target="_blank">
+                                        <Button raised colored ripple> Просмотреть на Ozon</Button>
+                                           
+                                           </a>
                                 </CardActions>
                             </Card>
                         );
