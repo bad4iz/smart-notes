@@ -31,7 +31,7 @@ class About extends Component {
                             avatar="person"
                             subtitle="React-MDL is a set of React components build on top of Material Design Litev1.2.1">React-MDL</ListItemContent>
                         <ListItemAction>
-                            <a href="#"><Icon name="star"/></a>
+                            <a href="https://github.com/react-mdl/react-mdl"><Icon name="star"/></a>
                         </ListItemAction>
                     </ListItem>
                 </List>
